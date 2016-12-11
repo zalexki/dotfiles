@@ -1,0 +1,33 @@
+{
+        "bootstrapped": true,
+        "in_process_packages":
+        [
+        ],
+        "installed_packages":
+        [
+                "Better Completion",
+                "BetterFindBuffer",
+                "DocBlockr",
+                "EditorConfig",
+                "Git",
+                "GitGutter",
+                "Markdown Preview",
+                "MarkdownHighlighting",
+                "Package Control",
+                "PHP Companion",
+                "PHP-Twig",
+                "Phpcs",
+                "PHPIntel",
+                "PhpSimpleRefactor",
+                "Sass",
+                "SideBarEnhancements",
+                "SublimeLinter",
+                "Symfony2 Snippets",
+                "SyncedSideBar",
+                "Theme - Nexus",
+                "TrailingSpaces",
+                "Twig",
+                "VAlign",
+                "Xdebug Client"
+        ]
+}
