@@ -1,0 +1,18 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"detect_indentation": false,
+	"fade_fold_buttons": false,
+	"font_face": "Source Code Pro",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"SublimeLinter",
+		"Vintage"
+	],
+	"show_encoding": true,
+	"show_full_path": true,
+	"theme": "Nexus.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
+}
