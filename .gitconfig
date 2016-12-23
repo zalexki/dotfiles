@@ -22,7 +22,7 @@
     rebs            = rebase --skip
     rebom           = rebase origin/master
     pom             = push origin master
-    ft              = fetch --all
+    fap             = fetch --all --prune
     frp             = ! git ft && git rebom && git pom
     fr              = ! git ft && git rebom
     arc             = ! git add . && git rebase --continue
