@@ -40,6 +40,14 @@ function export-nvm
  	. "/usr/local/opt/nvm/nvm.sh"
 }
 
+function docker-rm-container {
+        docker rm $(docker ps -a -q)
+}
+
+function docker-rm-images {
+        docker rmi -f $(docker images -q)
+}
+
 # Profile with this cmd :
 # /usr/bin/time zsh -i -c exit
 
