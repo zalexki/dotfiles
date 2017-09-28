@@ -21,6 +21,7 @@
     rebt            = rebase --abort
     rebs            = rebase --skip
     rebom           = rebase origin/master
+    rebod           = ! git fap && git rebase origin/develop
     pom             = push origin master
     fap             = fetch --all --prune
     frp             = ! git ft && git rebom && git pom
