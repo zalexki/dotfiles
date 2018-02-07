@@ -41,7 +41,7 @@ function export-nvm
 }
 
 function kill-dc {
-  docker kill $(docker ps -q)
+  	docker kill $(docker ps -q)
 }
 
 # Profile with this cmd :
