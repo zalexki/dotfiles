@@ -28,20 +28,32 @@ source $HOME/.oh-my-zsh/oh-my-zsh.sh
 alias cl=clear
 alias dc=docker-compose
 alias dm=docker-machine
+alias dka=docker-kill-all
+alias sc=sensiocloud
+alias psh=platform
+
+eval $(thefuck --alias fu)
 
 function eval-docker
 {
 	eval $(docker-machine env $1)
 }
 
-function export-nvm
-{
+function eval-nvm {
 	export NVM_DIR="$HOME/.nvm"
- 	. "/usr/local/opt/nvm/nvm.sh"
+	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 }
 
-function kill-dc {
-  	docker kill $(docker ps -q)
+function docker-rm-container {
+	docker rm $(docker ps -a -q)
+}
+
+function docker-rm-images {
+	docker rmi -f $(docker images -q)
+}
+
+function docker-kill-all {
+    docker kill $(docker ps -q)
 }
 
 # Profile with this cmd :
