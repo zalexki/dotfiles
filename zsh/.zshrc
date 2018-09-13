@@ -65,5 +65,3 @@ function docker-kill-all {
 ##### Profiling end
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-eval "$(thefuck --alias)"
