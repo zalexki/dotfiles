@@ -15,7 +15,6 @@ eval $(thefuck --alias fu)
 
 alias cl=clear
 alias dc=docker-compose
-alias dm=docker-machine
 alias dka=docker-kill-all
 alias sc=sensiocloud
 alias psh=platform
