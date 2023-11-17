@@ -16,21 +16,14 @@ eval $(thefuck --alias fu)
 alias cl=clear
 alias dc=docker-compose
 alias dka=docker-kill-all
-alias sc=sensiocloud
-alias psh=platform
 alias cgb=clean-git-branches
+
+function list-ports-used {
+  lsof -PiTCP -sTCP:LISTEN
+}
 
 function clean-git-branches {
   git branch --merged | egrep -v "(^\*|master|master_prod|dev|develop|Develop)" | xargs git branch -d
-}
-
-function eval-docker {
-  eval $(docker-machine env $1)
-}
-
-function eval-nvm {
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 }
 
 function docker-rm-container {
